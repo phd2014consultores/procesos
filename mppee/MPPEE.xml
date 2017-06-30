@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="ljordan">
+      <firstName>Luiscarl</firstName>
+      <lastName>Jordan</lastName>
+      <title>Lic.</title>
+      <jobTitle>Consultor de TI</jobTitle>
+      <manager></manager>
+      <personalData>
+        <email>luiscarl.jordan.phdconsultores@gmail.com</email>
+        <phoneNumber></phoneNumber>
+      </personalData>
+      <professionalData>
+        <email>luiscarl.jordan.phdconsultores@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">123456</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="PLANIFICADOR">
+      <displayName>PLANIFICADOR</displayName>
+      <description>Grupo de usuarios que planifica las publicaciones (con hora y fecha) de las redes sociales.</description>
+    </role>
+    <role name="PUBLICADOR">
+      <displayName>PUBLICADOR</displayName>
+      <description>Grupo de usuarios que aprueba las planificaciones y publica el contenido en las redes sociales.</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="PROVEEDOR">
+      <displayName>PROVEEDOR</displayName>
+      <description>Grupo de usuarios utilizados por el proveedor, para el desarrollo y mantenimiento del sistema.</description>
+    </group>
+    <group name="COMUNICACION">
+      <displayName>COMUNICACIÓN</displayName>
+      <description>Grupo de usuarios encargado de la gestión de redes sociales</description>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>ljordan</userName>
+      <roleName>PLANIFICADOR</roleName>
+      <groupName>PROVEEDOR</groupName>
+    </membership>
+    <membership>
+      <userName>ljordan</userName>
+      <roleName>PUBLICADOR</roleName>
+      <groupName>PROVEEDOR</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
